@@ -5,4 +5,8 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   base: "/Product-list-with-cart/",
   plugins: [react(), svgr()],
+  build: {
+    outDir: ".",    
+    emptyOutDir: false
+  }
 });
