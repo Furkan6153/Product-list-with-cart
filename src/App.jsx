@@ -24,7 +24,7 @@ export default function App() {
   }, [cartItems]);
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch("/Product-list-with-cart/data/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch(console.error);
